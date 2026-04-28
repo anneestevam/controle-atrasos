@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Controle de Atrasos</title>
+</head>
+<body>
+    <main>
+        <h1>Controle de Atrasos</h1>
+
+        <label for="data-registro">Data:</label>
+        <input type="date" id="data-registro">
+
+        <div class="turno">
+            <h2>Manhã</h2>
+            <label for="e1">Entrada Manhã</label>
+            <input type="time" name="" id="e1">
+            <label for="s1">Saída Manhã</label>
+            <input type="time" name="" id="s1">
+        </div>
+
+        <div class="turno">
+            <h2>Tarde</h2>
+            <label for="e2">Entrada Tarde</label>
+            <input type="time" name="" id="e2">
+            <label for="s2">Saída Tarde</label>
+            <input type="time" name="" id="s2">
+        </div>
+
+        <button onclick="salvarRegistro()">Salvar Ponto</button>
+
+        <div id="resultado-dia" class="resultado-dia" style="display: none;"></div>
+    </main>
+</body>
+</html>
